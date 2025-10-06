@@ -284,8 +284,7 @@ sulphuric-bench/
 5. **Track Progress**: Monitor your learning journey
 6. **Get Certified**: Download certificates upon completion
 
-### For Instructors
-
+### For Instructors(just sulphuric-bench teachers)
 1. **Apply**: Submit teacher application
 2. **Wait for Approval**: Admin review and approval
 3. **Create Courses**: Use the course builder
@@ -308,7 +307,6 @@ sulphuric-bench/
 ### User Roles
 - **Students** - Course enrollment, progress tracking, certificates
 - **Teachers** - Course creation, student management, analytics
-- **Admins** - Platform management, user oversight
 - **Super Admins** - Full system access and configuration
 
 ### Security Features
@@ -320,48 +318,6 @@ sulphuric-bench/
 - ✅ CORS protection
 - ✅ SQL injection prevention
 - ✅ XSS protection
-
----
-
-## 💰 Business Model & Pricing
-
-### Revenue Streams
-- **Course Sales** - One-time course purchases
-- **Subscription Plans** - Monthly/yearly access
-- **Corporate Training** - B2B enterprise solutions
-- **Certification Fees** - Professional certificates
-
-### Pricing Tiers
-
-| Plan | Price (BDT/month) | Features |
-|------|------------------|----------|
-| **Free** | ৳0 | • 3 Free courses<br>• Basic certificates<br>• Community support |
-| **Student** | ৳500 | • Unlimited courses<br>• Premium certificates<br>• Priority support<br>• Offline access |
-| **Professional** | ৳2,000 | • All Student features<br>• Advanced analytics<br>• Course creation tools<br>• API access |
-| **Enterprise** | Custom | • White-label solution<br>• Custom integrations<br>• Dedicated support<br>• SLA guarantees |
-
-### Course Pricing
-- Basic Courses: ৳500 - ৳2,000
-- Advanced Courses: ৳2,000 - ৳10,000
-- Professional Certifications: ৳15,000 - ৳50,000
-- Corporate Training: ৳100,000+ (custom)
-
----
-
-## 📈 Platform Metrics
-
-### Current Statistics
-- 📚 **250+** Active Courses
-- 👥 **15,000+** Registered Students
-- 🎓 **8,500+** Certificates Issued
-- 💰 **৳25,00,000+** Revenue Processed
-- 👨‍🏫 **150+** Verified Instructors
-
-### 2024 Growth Targets
-- 🎯 50,000+ registered users
-- 📖 1,000+ courses in catalog
-- 💵 ৳1,00,00,000+ ARR
-- 🏢 10+ institutional partnerships
 
 ---
 
@@ -434,48 +390,7 @@ See [Mobile Development Guide](https://capacitorjs.com/docs) for details.
 - 🎨 Custom branding options
 - 👥 Bulk user management
 - 📈 Advanced reporting
-- 🔌 API integrations
 
----
-
-## 🚀 Future Roadmap
-
-### Q1 2024
-- [ ] AI-powered course recommendations
-- [ ] Advanced quiz engine with multiple question types
-- [ ] Live streaming integration for classes
-- [ ] Mobile push notifications
-
-### Q2 2024
-- [ ] Multi-language support (i18n)
-- [ ] Blockchain-based certificates
-- [ ] Advanced analytics dashboard
-- [ ] LMS platform integrations (Moodle, Canvas)
-
-### Q3 2024
-- [ ] AR/VR learning modules
-- [ ] Peer-to-peer learning features
-- [ ] Advanced gamification system
-- [ ] Enterprise SSO integration
-
-### Q4 2024
-- [ ] AI teaching assistant
-- [ ] Advanced proctoring for exams
-- [ ] Marketplace for course creators
-- [ ] Mobile offline video downloads
-
----
-
-## 🤝 Contributing
-
-We welcome contributions from the community! Here's how you can help:
-
-### Ways to Contribute
-1. 🐛 **Report Bugs** - Submit issues on GitHub
-2. 💡 **Suggest Features** - Share your ideas
-3. 🔧 **Submit Pull Requests** - Fix bugs or add features
-4. 📖 **Improve Documentation** - Help others understand the project
-5. 🌍 **Translate** - Add language support
 
 ### Development Workflow
 
@@ -498,30 +413,19 @@ We welcome contributions from the community! Here's how you can help:
 
 ### Get Help
 - 📧 **Email**: support@sulphuricbench.com
-- 💬 **Live Chat**: Available on website
 - 📚 **Documentation**: [docs.sulphuricbench.com](https://docs.sulphuricbench.com)
-- 🐛 **Issues**: [GitHub Issues](https://github.com/yourusername/sulphuric-bench/issues)
 
 ### Business Inquiries
-- 🏢 **Enterprise**: enterprise@sulphuricbench.com
-- 🤝 **Partnerships**: partners@sulphuricbench.com
-- 📱 **Phone**: +1 (555) 123-4567
+- 🏢 **Enterprise**: 
+- 🤝 **Partnerships**: 
+- 📱 **Phone**: 
 
 ### Office Location
-**San Francisco HQ**  
-123 Tech Street, Suite 100  
-San Francisco, CA 94105  
-United States
+** HQ**  
 
 ---
 
-## 📄 License
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🙏 Acknowledgments
 
 ### Technologies
 - [React](https://react.dev/) - UI Library
@@ -531,22 +435,11 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 - [shadcn/ui](https://ui.shadcn.com/) - Component Library
 - [Capacitor](https://capacitorjs.com/) - Mobile Framework
 
-### Community
-Special thanks to all contributors, early adopters, and the amazing open-source community that makes projects like this possible.
-
 ---
 
-## 📊 Project Stats
-
-![GitHub stars](https://img.shields.io/github/stars/yourusername/sulphuric-bench?style=social)
-![GitHub forks](https://img.shields.io/github/forks/yourusername/sulphuric-bench?style=social)
-![GitHub issues](https://img.shields.io/github/issues/yourusername/sulphuric-bench)
-![GitHub license](https://img.shields.io/github/license/yourusername/sulphuric-bench)
-
----
 
 <p align="center">
-  Made with ❤️ by the Sulphuric Bench Team<br>
+  Made with ❤️ by Muhammad Abdullah <br>
   <strong>Empowering Minds Through Quality Education</strong>
 </p>
 
