@@ -1,0 +1,24 @@
+project_id = "idkwicblyakptcldiksf"
+
+[functions.manage-users]
+verify_jwt = false
+
+[functions.manage-payment-settings]
+verify_jwt = false
+
+# Alias without the word "payment" to avoid ad/tracker blocking on some networks
+[functions.manual-actions]
+verify_jwt = false
+
+# Super Admin Authentication Functions
+[functions.super-admin-login]
+verify_jwt = false
+
+[functions.super-admin-verify]
+verify_jwt = false
+
+[functions.super-admin-logout]
+verify_jwt = false
+
+[functions.super-admin-profile]
+verify_jwt = false

@@ -1,0 +1,177 @@
+/* Mobile App Specific Styles */
+
+.mobile-app {
+  /* Ensure full height on mobile */
+  min-height: 100vh;
+  min-height: 100dvh; /* Dynamic viewport height for mobile */
+  
+  /* Handle safe areas */
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
+/* Mobile Navigation Styles */
+.mobile-navigation {
+  position: relative;
+  z-index: 50;
+}
+
+/* Adjust content for bottom navigation */
+@media (max-width: 768px) {
+  .mobile-app .main-content {
+    padding-bottom: calc(4rem + env(safe-area-inset-bottom));
+  }
+}
+
+/* Keyboard handling */
+.mobile-app.keyboard-open {
+  padding-bottom: var(--keyboard-height, 0px);
+}
+
+/* Touch optimizations */
+.mobile-app button,
+.mobile-app a,
+.mobile-app [role="button"] {
+  min-height: 44px; /* Minimum touch target size */
+  min-width: 44px;
+}
+
+/* Improve scrolling on mobile */
+.mobile-app {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+
+/* Card hover effects should be tap effects on mobile */
+@media (hover: none) and (pointer: coarse) {
+  .mobile-app .card:hover {
+    transform: none;
+  }
+  
+  .mobile-app .card:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+  }
+}
+
+/* Optimize form inputs for mobile */
+.mobile-app input,
+.mobile-app textarea,
+.mobile-app select {
+  font-size: 16px; /* Prevent zoom on iOS */
+  border-radius: 8px;
+}
+
+/* Loading states optimized for mobile */
+.mobile-app .skeleton {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Mobile-specific course cards */
+.mobile-app .course-card {
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.mobile-app .course-card img {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+/* Dashboard optimizations */
+.mobile-app .dashboard-card {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile-friendly tables */
+.mobile-app .table-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mobile-app table {
+  min-width: 600px;
+}
+
+/* Responsive video containers */
+.mobile-app .video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.mobile-app .video-container iframe,
+.mobile-app .video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Pull-to-refresh indicator */
+.mobile-app .ptr-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  color: var(--primary);
+}
+
+/* Swipe gestures */
+.mobile-app .swipeable {
+  touch-action: pan-y;
+}
+
+.mobile-app .swipeable.swiping {
+  transition: transform 0.3s ease;
+}
+
+/* Modal optimizations for mobile */
+.mobile-app .modal-content {
+  max-height: calc(100vh - 2rem);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Fix for iOS Safari bottom bar */
+@supports (-webkit-touch-callout: none) {
+  .mobile-app {
+    min-height: -webkit-fill-available;
+  }
+}
+
+/* Dark mode optimizations */
+@media (prefers-color-scheme: dark) {
+  .mobile-app {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .mobile-app .card {
+    border: 2px solid hsl(var(--border));
+  }
+  
+  .mobile-app button {
+    border: 2px solid currentColor;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .mobile-app * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

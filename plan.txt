@@ -1,0 +1,91 @@
+# Mobile App Deployment Plan
+
+## Prerequisites
+1. Install Android Studio (for Android)
+2. Install Xcode (for iOS, Mac only)
+3. Install Node.js (v16 or higher)
+4. Install Git
+
+## Step 1: Setup Development Environment
+1. Export project to GitHub using "Export to Github" button in Lovable
+2. Clone the repository locally:
+   ```bash
+   git clone [your-repo-url]
+   cd [project-name]
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+## Step 2: Configure Capacitor
+1. Add platforms:
+   ```bash
+   npx cap add android
+   npx cap add ios
+   ```
+
+2. Update native platform dependencies:
+   ```bash
+   npx cap update android
+   npx cap update ios
+   ```
+
+## Step 3: Build and Sync
+1. Build the project:
+   ```bash
+   npm run build
+   ```
+
+2. Sync with native platforms:
+   ```bash
+   npx cap sync
+   ```
+
+## Step 4: Run on Device/Emulator
+### Android:
+```bash
+npx cap run android
+```
+
+### iOS (Mac only):
+```bash
+npx cap run ios
+```
+
+## Step 5: Testing
+- Test all authentication flows
+- Test payment integration
+- Test course access
+- Test dashboard functionality
+- Test offline capabilities
+
+## Step 6: Production Build
+1. Build for production:
+   ```bash
+   npm run build
+   npx cap sync
+   ```
+
+2. Open in native IDE:
+   - Android: `npx cap open android`
+   - iOS: `npx cap open ios`
+
+3. Generate signed APK/AAB for Android or IPA for iOS
+
+## Troubleshooting
+- If build fails, run `npm run build` first
+- If sync issues occur, delete platforms and re-add them
+- Check capacitor.config.ts for correct URLs
+- Ensure all permissions are set in native configs
+
+## Current Issues to Fix:
+1. ✅ Build errors in edge functions (FIXED)
+2. 🔧 My Courses access denied issue
+3. 🔧 Invoice UI redesign
+4. 🔧 Payment History data display
+5. 🔧 Review section topic selection
+
+## Next Steps:
+After mobile setup, address the UI/UX issues mentioned for better user experience.
